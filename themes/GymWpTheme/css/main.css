@@ -59,6 +59,34 @@ img {
   max-width: 100%;
   margin: auto; }
 
+.text-center {
+  text-align: center; }
+
+.text-primary {
+  color: var(--primary); }
+
+.section {
+  padding: 5rem 0; }
+
+.featured-img {
+  margin-bottom: 2rem; }
+
+.page.no-sidebars {
+  max-width: 80rem;
+  margin: 0 auto; }
+
+.page h1 {
+  margin-bottom: 2rem; }
+
+@media (min-width: 768px) {
+  .page.with-sidebar {
+    display: flex;
+    justify-content: space-between; }
+  .with-sidebar .page-content {
+    flex: 0 0 calc(60% - 2rem); }
+  .with-sidebar .sidebar {
+    flex: 0 0 calc(40% - 2rem); } }
+
 .logo {
   display: flex;
   justify-content: center; }
@@ -112,7 +140,6 @@ img {
   font-size: 2.4rem;
   text-align: center; }
 
-/* Footer */
 .site-footer {
   border-top: 2px solid var(--lightGrey);
   padding: 2rem 0; }
