@@ -74,3 +74,4 @@ add_action('widgets_init', 'gymfitness_widgets');
 
 ?>
 
+
