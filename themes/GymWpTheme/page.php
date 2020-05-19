@@ -1,4 +1,4 @@
-<!-- page.php refers to WordPress Pages -->
+<!-- page.php refers to Default WordPress Pages -->
 <?php get_header(); ?>
 
 <Main class="container page section no-sidebars">

@@ -1,5 +1,8 @@
 <?php  
 
+// Link to the queries file
+require get_template_directory() . '/inc/queries.php';
+
 // Create the Menus - 3 Step: Functions.php -> WP Setup -> Front End Code
 function gymfitness_menus() {
   // Wordpress Function
