@@ -17,21 +17,37 @@
 
 // Page with sidebars
 @media (min-width: 768px) {
-  .page.with-sidebar {
+  .with-sidebar {
+    max-width: 120rem;
     display: flex;
     justify-content: space-between;
-  }
 
-  .with-sidebar .page-content {
-    flex: 0 0 calc(60% - 2rem);
-  }
+    .page-content {
+      width: 60%;
+      margin-right: 4rem;
 
-  .with-sidebar .sidebar {
-    flex: 0 0 calc(40% - 2rem);
+      p.content-class {
+        font-weight: 700;
+        font-family: var(--secondaryFont);
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .featured-img {
+        height: 500px;
+        width: 100%;
+      }
+    }
+
+    .sidebar {
+      width: 40%;
+    }
   }
+    
+
 }
 
-// Classes List
+// Classes Page
 .classes-list {
   margin-top: 4rem;
 }
@@ -102,5 +118,5 @@
       }
     }
   }
-  
 }
+

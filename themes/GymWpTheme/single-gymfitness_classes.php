@@ -1,12 +1,9 @@
-<p>hello from page-siderbar.php</p>
+<!-- single.php refers to WordPress Posts -->
 
-<?php  
+<p>hello from single-gymfitness_classes.php</p>
 
-/*
-* Template Name: Page with Sidebar
-*/
 
-get_header(); ?>
+<?php get_header(); ?>
 
 <Main class="container page section with-sidebar">
   <div class="page-content">
@@ -19,7 +16,4 @@ get_header(); ?>
 
 </Main>
 
-
-
 <?php get_footer(); ?>
-
