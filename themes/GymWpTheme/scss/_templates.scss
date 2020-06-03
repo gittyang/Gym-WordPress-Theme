@@ -1,7 +1,7 @@
 // Templates
 
 
-// Page Templates
+// Page Template
 .featured-img {
   margin-bottom: 2rem;
 }
@@ -18,7 +18,7 @@
 // Page with sidebars
 @media (min-width: 768px) {
   .with-sidebar {
-    max-width: 120rem;
+    max-width: 140rem;
     display: flex;
     justify-content: space-between;
 
@@ -43,8 +43,6 @@
       width: 40%;
     }
   }
-    
-
 }
 
 // Classes Page
@@ -100,7 +98,6 @@
       background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 74%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
       background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 74%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
-
     }
 
     .card-content {
@@ -119,4 +116,45 @@
     }
   }
 }
+
+// Sidebar
+.sidebar {
+  a {
+    color: black;
+  }
+  .widget{
+    margin-bottom: 2rem;
+
+    .classes-header {
+      margin-bottom: 2rem;
+    }
+    .sidebar-classes-list {
+
+      .sidebar-class {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+          
+        .sidebar-widget-image {
+          flex: 0 0 30%;
+        }
+
+        .class-content {
+          flex: 0 0 calc(70% - 2em);
+          
+          p {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  
+
+
+}
+
 

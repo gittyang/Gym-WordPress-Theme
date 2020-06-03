@@ -35,8 +35,7 @@ h1 {
   font-size: 6rem; }
 
 h2 {
-  font-size: 4.8rem;
-  color: var(--primary); }
+  font-size: 4.8rem; }
 
 h3 {
   font-size: 3.6rem; }
@@ -167,7 +166,7 @@ img {
 
 @media (min-width: 768px) {
   .with-sidebar {
-    max-width: 120rem;
+    max-width: 140rem;
     display: flex;
     justify-content: space-between; }
     .with-sidebar .page-content {
@@ -237,3 +236,23 @@ img {
       text-align: left; }
       .card .card-content a {
         color: var(--white); } }
+
+.sidebar a {
+  color: black; }
+
+.sidebar .widget {
+  margin-bottom: 2rem; }
+  .sidebar .widget .classes-header {
+    margin-bottom: 2rem; }
+  .sidebar .widget .sidebar-classes-list .sidebar-class {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+    .sidebar .widget .sidebar-classes-list .sidebar-class .sidebar-widget-image {
+      flex: 0 0 30%; }
+    .sidebar .widget .sidebar-classes-list .sidebar-class .class-content {
+      flex: 0 0 calc(70% - 2em); }
+      .sidebar .widget .sidebar-classes-list .sidebar-class .class-content p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0; }
