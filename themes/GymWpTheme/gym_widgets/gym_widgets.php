@@ -11,7 +11,7 @@
   Version: 1.0
   Author:  Tou Toua Yang
   Author URI:
-  Text Domain: Gym
+  Text Domain: Gym 
 */
 
 if(!defined('ABSPATH')) die();
