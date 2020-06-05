@@ -1,10 +1,19 @@
-<!-- single.php refers to WordPress Posts -->
+<!-- single.php refers to WordPress Posts (Blogs) -->
 
 
-<?php while(have_posts()): the_post(); ?>
+<p>hello from single.php</p>
 
-  <h1><?php the_title(); ?></h1>
+<?php get_header(); ?>
 
-  <?php the_content(); ?>
+<Main class="container page section with-sidebar">
+  <div class="page-content">
 
-<?php endwhile; ?>
+  <?php get_template_part('template-parts/page', 'loop'); ?>
+
+  </div>
+
+  <?php get_sidebar(); ?>
+
+</Main>
+
+<?php get_footer(); ?>

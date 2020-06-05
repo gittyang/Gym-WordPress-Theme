@@ -46,7 +46,8 @@
 }
 
 // Classes Page
-.classes-list {
+.classes-list,
+.blog-entries {
   margin-top: 4rem;
 }
 
@@ -71,11 +72,20 @@
       font-size: 2rem;
       margin: 0;
     }
+
+    .date-published {
+      color: white;
+
+      span {
+        color: var(--primary);
+      }
+    }
   }
 }
 
 @media (min-width: 768px) {
-  .classes-list {
+  .classes-list,
+  .blog-entries {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -193,4 +203,8 @@
     grid-template-columns: repeat(4, 1fr);
   }
 } 
+
+// Blog
+
+
 

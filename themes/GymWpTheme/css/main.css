@@ -183,7 +183,8 @@ img {
     .with-sidebar .sidebar {
       width: 40%; } }
 
-.classes-list {
+.classes-list,
+.blog-entries {
   margin-top: 4rem; }
 
 .card {
@@ -200,9 +201,14 @@ img {
       font-weight: 700;
       font-size: 2rem;
       margin: 0; }
+    .card .card-content .date-published {
+      color: white; }
+      .card .card-content .date-published span {
+        color: var(--primary); }
 
 @media (min-width: 768px) {
-  .classes-list {
+  .classes-list,
+  .blog-entries {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
