@@ -249,5 +249,66 @@
   }
 }
 
+// Contact Form
+.wpcf7-form {
+  p {
+    display: flex;
+    flex-wrap: wrap;
+
+    label,
+    span {
+      flex: 0 0 100%;
+    }
+
+    span {
+      display: flex;
+      flex-wrap: wrap;
+
+
+      .wpcf7-form-control{
+        flex: 0 0 100%;
+        border: 1px solid var(--lightGray);
+        padding: 1rem;
+      }
+    }
+
+  }
+
+  .wpcf7-submit {
+    background-color: var(--primary);
+    font-size: 2rem;
+    font-family: var(--mainFont);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .wpcf7-validation-errors {
+    background-color: red;
+    color: white;
+    border: none;
+    text-align: center;
+  }
+
+  div.wpcf7 .ajax-loader {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  div.wpcf7-mail-sent-ok {
+    background-color: green;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+}
+
 
 

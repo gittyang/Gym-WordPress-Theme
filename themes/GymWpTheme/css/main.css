@@ -6,7 +6,7 @@
   /* Colors */
   --primary: #FF5B00;
   --darkGray: #2F2E2E;
-  --lightGrey: #EBEBEB;
+  --lightGray: #EBEBEB;
   --white: #ffffff;
   --black: #000000; }
 
@@ -315,3 +315,45 @@ img {
     @media (min-width: 768px) {
       .post-categories li a {
         color: white; } }
+
+.wpcf7-form p {
+  display: flex;
+  flex-wrap: wrap; }
+  .wpcf7-form p label,
+  .wpcf7-form p span {
+    flex: 0 0 100%; }
+  .wpcf7-form p span {
+    display: flex;
+    flex-wrap: wrap; }
+    .wpcf7-form p span .wpcf7-form-control {
+      flex: 0 0 100%;
+      border: 1px solid var(--lightGray);
+      padding: 1rem; }
+
+.wpcf7-form .wpcf7-submit {
+  background-color: var(--primary);
+  font-size: 2rem;
+  font-family: var(--mainFont);
+  color: white;
+  padding: 1rem;
+  width: 100%; }
+  .wpcf7-form .wpcf7-submit:hover {
+    cursor: pointer; }
+
+.wpcf7-form .wpcf7-validation-errors {
+  background-color: red;
+  color: white;
+  border: none;
+  text-align: center; }
+
+.wpcf7-form div.wpcf7 .ajax-loader {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 4rem;
+  width: 4rem; }
+
+.wpcf7-form div.wpcf7-mail-sent-ok {
+  background-color: green;
+  color: white;
+  padding: 1rem;
+  text-align: center; }
