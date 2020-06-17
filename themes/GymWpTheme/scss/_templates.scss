@@ -267,7 +267,6 @@
 
       .wpcf7-form-control{
         flex: 0 0 100%;
-        border: 1px solid var(--lightGray);
         padding: 1rem;
       }
     }
@@ -280,9 +279,12 @@
     font-family: var(--mainFont);
     color: white;
     padding: 1rem;
-    width: 100%;
+    width: 100px;
+    border-radius: .5rem;
+    border: none;
 
     &:hover {
+      background-color: lighten(#FF5B00, 3%); 
       cursor: pointer;
     }
   }

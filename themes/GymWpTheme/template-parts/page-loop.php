@@ -10,7 +10,7 @@
       // Display the image
       the_post_thumbnail('blog', array('class' => 'featured-img') );
     else:
-      echo "<p>No image</p>";
+      
     endif;
 
     // Check for current post type

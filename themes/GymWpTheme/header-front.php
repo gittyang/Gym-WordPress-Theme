@@ -12,6 +12,8 @@
 <header class="site-header">
 
   <div class="container header-grid">
+   <p>hello from header-front.php</p>
+   
     <div class="navigation-bar">
       <div class="logo">
         <a href="<?php echo home_url(); ?>">
@@ -29,5 +31,11 @@
       ?> <!-- Links -->
 
     </div><!-- .nav bar -->
+
+    <div class="tagline text-center">
+      <h1><?php the_field('hero_tagline'); ?></h1>
+      <p><?php the_field('hero_content'); ?></p>
+    </div>
+
   </div><!-- .container -->
 </header>
