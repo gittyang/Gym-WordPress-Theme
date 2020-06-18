@@ -6,11 +6,13 @@
 
 <?php while( have_posts() ): the_post(); ?>
 
+  <!-- Welcome Section -->
   <section class="welcome text-center section">
     <h2 class="text-primary"><?php the_field('welcome_heading'); ?></h2>
     <p><?php the_field('welcome_text'); ?></p>
   </section>
 
+  <!-- Area Section -->
   <section class="section-areas">
     <ul class="areas-container">
       <li class="area">
@@ -49,6 +51,21 @@
         <p><?php echo $area4['area_name']; ?></p>
       </li>
     </ul>
+  </section>
+
+  <!-- Classes Section -->
+  <section class="classes-homepage">
+    <div class="container section">
+      <h2 class="text-primary text-center">Our Classes</h2>
+
+      <?php gymfitness_classes_list(4); ?>
+
+      <div class="button-container">
+        <a class="button" href="<?php echo get_permalink( get_page_by_title('Classes') ); ?>">
+          View All Classes
+        </a>
+      </div>
+    </div>
   </section>
 
 <?php endwhile; ?>

@@ -14,7 +14,7 @@ function style() {
 function watch() {
     browserSync.init({
       notify: false,
-      proxy: 'http://gymfitness.local/about-us/',
+      proxy: 'http://gymfitness.local/',
       ghostMode: false
     });
     gulp.watch('./scss/**/*.scss', style)

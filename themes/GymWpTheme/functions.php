@@ -71,7 +71,7 @@ function gymfitness_setup() {
 add_action('after_setup_theme', 'gymfitness_setup');
 
 
-// Create a Widget - 3 Step: Functions.php -> WP Setup -> Front End Code
+// Create a Sidebar Widget - 3 Step: Functions.php -> WP Setup -> Front End Code
 function gymfitness_widgets() {
   register_sidebar(array(
     'name' => 'Sidebar',

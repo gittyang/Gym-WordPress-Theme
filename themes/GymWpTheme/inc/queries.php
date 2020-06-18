@@ -1,22 +1,32 @@
 
 <?php 
 
-function gymfitness_classes_list() { ?>
+// This file contains the Front End code to display the "Gym Classes"
+// The Back End code where the Post Type "Classes" Plugin was created
+// Is located at gym_post_types.php in the Plugins folder
+
+
+// Needs $number parameter to display 4 posts in front-page.php, 
+// Include -1 to remove error and instead display all
+function gymfitness_classes_list($number = -1) { ?>
 
   <p>hello from queries.php</p>
 
+  <!-- gitfitness_classes_list function displays all gym classes -->
   <ul class="classes-list">
     <?php 
       $args = array(
-        'post_type' => 'gymfitness_classes',
+        'post_type' => 'gymfitness_classes', // located in gym_post_types.php in Plugins folder
+        'posts_per_page' => $number
       );
 
       // Use WP_Query and append the results into $classes
       $classes = new WP_Query($args);
 
+      // Loop through all posts
       while($classes->have_posts()): $classes->the_post();
-
     ?>
+
     <li class="gym-class card gradient">
       <?php the_post_thumbnail('mediumSize'); ?>
 
@@ -39,5 +49,4 @@ function gymfitness_classes_list() { ?>
   </ul>
 
 <?php }
-
 ?>
