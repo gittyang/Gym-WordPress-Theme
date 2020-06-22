@@ -56,6 +56,79 @@
   }
 }
 
+// Instructors Section
+.instructors {
+
+  .container {
+
+    .instructor-list {
+
+      li {
+        margin: 2rem 1rem;
+        border-bottom: 1px solid var(--lightGray);
+
+        img {
+          display: block;
+          height: 350px;
+          object-fit: cover;
+        }
+        
+        .content {
+          padding: 3rem;
+        }
+      }
+    }
+  }
+    @media (min-width: 768px) {
+      .instructor-list {
+        // border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .instructor {
+          width: 45%;
+          position: relative;
+
+          .content {
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background-color: rgba(0,0,0, .75);
+            color: white;
+
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            opacity: 0;
+            transition: .3s ease-in-out;
+
+            &:hover {
+              opacity: 100%;
+            }
+
+            div {
+              width: 100%;
+            }
+
+            h3 {
+              color: var(--primary);
+            }
+          }
+        }
+      }
+    }
+}
+
+
+
+// --- End Front Page--- 
+
 
 // Page Template
 .featured-img {
@@ -102,90 +175,107 @@
 }
 
 // Classes Page
-.classes-list,
-.blog-entries {
-  margin-top: 4rem;
-}
+.classes-homepage {
+  background-color: var(--lightGray);
 
-.card {
-  margin-bottom: 4rem;
+  .container {
 
-  img {
-    display: block;
-  }
-
-  .card-content {
-    padding: 3rem;
-    text-align: center;
-
-    a {
-      color: var(--black);
+    
+    .classes-list,
+    .blog-entries {
+      margin-top: 4rem;
     }
-
-    p {
-      color: var(--primary);
-      font-weight: 700;
-      font-size: 2rem;
-      margin: 0;
-    }
-
-    .date-published {
-      color: black;
-
-      span {
-        color: var(--primary);
+    
+    .card {
+      margin-bottom: 4rem;
+      
+      img {
+        display: block;
+      }
+      
+      .card-content {
+        padding: 3rem;
+        text-align: center;
+        
+        a {
+          color: var(--primary);
+        }
+        
+        p {
+          color: var(--primary);
+          font-weight: 700;
+          font-size: 2rem;
+          margin: 0;
+        }
+        
+        .date-published {
+          color: black;
+          
+          span {
+            color: var(--primary);
+          }
+        }
       }
     }
   }
 }
 
 @media (min-width: 768px) {
-  .classes-list,
-  .blog-entries {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
 
-  .card {
-    flex: 0 0 calc(50% - 2rem);
-    position: relative;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      
-      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.7+74 */
-      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 74%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 74%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 74%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
-    }
+  .classes-homepage {
+    background-color: var(--lightGray);
+  
+    .container {
 
-    .card-content {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      z-index: 1;
-      color: white;
-      padding: 2rem;
-      text-align: left;
-
-      a {
-        color: var(--white);
+      .classes-list,
+      .blog-entries {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
       }
 
-      .date-published {
-        color: white;
+      .card {
+        flex: 0 0 calc(50% - 2rem);
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          
+          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.7+74 */
+          background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 74%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 74%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 74%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+        }
+
+        .card-content {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          z-index: 1;
+          color: white;
+          padding: 2rem;
+          text-align: left;
+
+          a {
+            color: var(--white);
+          }
+
+          .date-published {
+            color: white;
+          }
+        }
       }
     }
   }
 }
+
 
 // Sidebar
 .sidebar {

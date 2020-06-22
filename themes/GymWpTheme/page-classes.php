@@ -8,6 +8,7 @@
 
   <?php 
   
+  // This function is an "include" located at inc/queries.php that displays the classes
   gymfitness_classes_list();
   
   ?>

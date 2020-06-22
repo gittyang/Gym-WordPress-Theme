@@ -68,8 +68,19 @@
     </div>
   </section>
 
+  <section class="instructors">
+    <div class="container section">
+      <h2 class="text-center text-primary">Our Instructors</h2>
+      <p>Professional instructors that will help you achieve your goals</p>
+
+      <!-- This function is an "include" located at inc/queries.php in displays the instructors -->
+      <?php gymfitness_instructors_list() ?>
+    </div>
+  </section>
+
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
+
 
 
