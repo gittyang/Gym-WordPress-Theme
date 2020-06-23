@@ -85,7 +85,7 @@
   <!--  Testimonials Sections -->
   <section class="testimonials">
     <h2 class="text-center text-primary">Testimonials</h2>
-    <div class="container">
+    <div class="container-testimonials">
       
     <?php gymfitness_testimonial_list(); ?>
     

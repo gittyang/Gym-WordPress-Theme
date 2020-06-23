@@ -7,5 +7,7 @@ jQuery(document).ready(function($){
   $('#menu-main-navigation').slicknav();
 
   // Run the bxslider on testimonials
-  $('.testimonials-list').bxSlider();
+  $('.testimonials-list').bxSlider({
+    mode: 'fade'
+  });
 });
