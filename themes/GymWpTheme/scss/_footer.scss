@@ -1,13 +1,14 @@
 // --- Footer Styles---
 
 .site-footer {
-  border-top: 2px solid var(--lightGrey);
-  padding: 2rem 0;
+  background-color: var(--lightGray);
+  width: 100%;
+  padding: 4rem 0;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer-menu .menu {

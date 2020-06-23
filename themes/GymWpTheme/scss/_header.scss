@@ -1,30 +1,94 @@
 // --- Header Styles ---
 
-
-.logo {
-  display: flex;
-  justify-content: center;
-}
-
 .site-header {
+  // border: 2px solid cyan;
   background-color: var(--darkGray);
   padding: 2rem 0;
-}
+  
+  .header-grid {
+    // border: 2px solid brown;
+    margin-top: 2rem;
+    
+    .navigation-bar {
+      // border: 2px solid greenyellow;
 
-@media (min-width: 768px) {
-  .navigation-bar {
-    display: flex;
-    justify-content: space-between;
+      .nav-container {
+        // border: 2px solid blue;
+        display: flex;
+        justify-content: center;
+        
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .navigation-bar {
+
+        .nav-container {
+        display: flex;
+        justify-content: space-between;
+        }
+      }
+    }
+
+    body.ft {
+
+    }
+
+    .fixed-top {
+      position: fixed;
+      width: 100%;
+      height: 113px;
+      top: 0;
+      left: 0;
+      background: linear-gradient(
+        rgba(47,46,46, .9),
+        rgba(47,46,46, .9)
+      );
+      z-index: 100;
+
+      .nav-container {
+        max-width: 120rem;
+        margin: auto;
+        
+        .logo a img {
+          width: 180px;
+        }
+  
+        .main-menu li{
+          padding: .5rem 0rem;
+          margin-right: .3rem;
+  
+  
+        }
+      }
+
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+    
+      @media (min-width: 768px) {
+        width: 230px;
+      }
+
+      @media (min-width: 992px) {
+        width: 250px;
+      }
+    }
   }
 }
+
+
 
 // Front Header
 
 body.home {
 
   .site-header {
-    border: 2px solid red;
-    height: 100vh;
+    height: 90vh;
     min-height: 65rem; // 650px
     padding-top: 2rem; 
 
@@ -32,32 +96,42 @@ body.home {
 
       .tagline {
         color: white;
-        margin-top: 10rem;
+        margin-top: 15rem;
+
       }
     }
 
     @media (min-width: 768px) {
       .header-grid {
-        border: 2px solid blue;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        height: 100%;
+        // border: 2px solid red;
 
         .navigation-bar {
-          grid-column: 1 / 5;
+          // border: 2px solid blue;
+          display: grid;
+          // grid-template-columns: repeat(4, 1fr);
+          // grid-template-rows: repeat(5, 1fr);
+          // height: 100%;
+  
+          .nav-container {
+            // border: 2px solid green;
+            grid-column: 1 / 5;
+          }
         }
-
+  
+  
         .tagline {
-          grid-column: 2 / 4;
-          grid-row: 3 / 4;
-          margin-top: 0;
-
+          // border: 2px solid orange;
+          // grid-column: 2 / 4;
+          // grid-row: 3 / 4;
+          // margin-top: 0;
+  
           p {
             font-size: 2rem;
           }
         }
       }
+
+    
 
     }
   }
@@ -92,9 +166,23 @@ body.home {
 
   .main-menu li a {
     color: var(--white);
-    font-size: 2.8rem;
     font-family: var(--mainFont);
-    padding: .5rem 2rem;
+    padding: .5rem 1.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.1rem;
+      padding: .5rem .75rem;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 3rem;
+      padding: .5rem 1.25rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 3.5rem;
+      padding: .5rem 1.5rem;
+    }
   }
 
 .main-menu .current_page_item {

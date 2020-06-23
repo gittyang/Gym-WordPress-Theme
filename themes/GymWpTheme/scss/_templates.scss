@@ -56,6 +56,11 @@
   }
 }
 
+// Classes Section
+.classes-homepage {
+  background-color: var(--lightGray);
+}
+
 // Instructors Section
 .instructors {
 
@@ -256,103 +261,107 @@
   }
 }
 
+
+// About Us Page
+.about {
+
+  p {
+  }
+
+  h1 {
+  }
+
+  img {
+    display: flex;
+    text-align: center;
+  }
+}
+
+
 // Classes Page
-.classes-homepage {
-  background-color: var(--lightGray);
 
-  .container {
+.classes-list,
+.blog-entries {
+  margin-top: 4rem;
+}
 
+.card {
+  margin-bottom: 4rem;
+  
+  img {
+    display: block;
+  }
+  
+  .card-content {
+    padding: 3rem;
+    text-align: center;
     
-    .classes-list,
-    .blog-entries {
-      margin-top: 4rem;
+    a {
+      color: var(--primary);
     }
     
-    .card {
-      margin-bottom: 4rem;
+    p {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 2rem;
+      margin: 0;
+    }
+    
+    .date-published {
+      color: black;
       
-      img {
-        display: block;
-      }
-      
-      .card-content {
-        padding: 3rem;
-        text-align: center;
-        
-        a {
-          color: var(--primary);
-        }
-        
-        p {
-          color: var(--primary);
-          font-weight: 700;
-          font-size: 2rem;
-          margin: 0;
-        }
-        
-        .date-published {
-          color: black;
-          
-          span {
-            color: var(--primary);
-          }
-        }
+      span {
+        color: var(--primary);
       }
     }
   }
 }
 
+
 @media (min-width: 768px) {
 
-  .classes-homepage {
-    background-color: var(--lightGray);
-  
-    .container {
+  .classes-list,
+  .blog-entries {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-      .classes-list,
-      .blog-entries {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+  .card {
+    flex: 0 0 calc(50% - 2rem);
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.7+74 */
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 74%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 74%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 74%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+    }
+
+    .card-content {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 1;
+      color: white;
+      padding: 2rem;
+      text-align: left;
+
+      a {
+        color: var(--white);
       }
 
-      .card {
-        flex: 0 0 calc(50% - 2rem);
-        position: relative;
-        
-        &::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          
-          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.7+74 */
-          background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 74%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
-          background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 74%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-          background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 74%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
-        }
-
-        .card-content {
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          z-index: 1;
-          color: white;
-          padding: 2rem;
-          text-align: left;
-
-          a {
-            color: var(--white);
-          }
-
-          .date-published {
-            color: white;
-          }
-        }
+      .date-published {
+        color: white;
       }
     }
   }

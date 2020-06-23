@@ -4,8 +4,6 @@
 */
 get_header(); ?>
 
-<p>Hello from gallery.php</p>
-
 <Main class="container page section">
 
   

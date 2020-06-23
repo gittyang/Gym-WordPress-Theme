@@ -1,4 +1,3 @@
-<p>hello from page-loop.php</p>
 
 <?php while(have_posts()): the_post(); ?>
   
@@ -8,7 +7,7 @@
     // Check if an image exists
     if( has_post_thumbnail() ) :
       // Display the image
-      the_post_thumbnail('blog', array('class' => 'featured-img') );
+      the_post_thumbnail('mediumSize', array('class' => 'featured-img') );
     else:
       
     endif;

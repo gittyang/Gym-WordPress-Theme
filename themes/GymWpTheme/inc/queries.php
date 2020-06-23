@@ -10,8 +10,6 @@
 // Include -1 to remove error and instead display all
 function gymfitness_classes_list($number = -1) { ?>
 
-  <p>hello from queries.php</p>
-
   <!-- gitfitness_classes_list function displays all gym classes -->
   <ul class="classes-list">
     <?php 

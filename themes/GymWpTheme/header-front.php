@@ -12,24 +12,23 @@
 <header class="site-header">
 
   <div class="container header-grid">
-   <p>hello from header-front.php</p>
-   
     <div class="navigation-bar">
-      <div class="logo">
-        <a href="<?php echo home_url(); ?>">
-        <img src="<?php echo get_template_directory_uri() . "/img/logo.svg"?>" alt="Site Logo">
-        </a>
-      </div><!-- .logo -->
+      <div class="nav-container">
+        <div class="logo">
+          <a href="<?php echo home_url(); ?>">
+          <img src="<?php echo get_template_directory_uri() . "/img/logo.svg"?>" alt="Site Logo">
+          </a>
+        </div><!-- .logo -->
 
-      <?php 
-        $args = array(
-          'theme_location' => 'main-menu',
-          'container' => 'nav',
-          'container_class' => 'main-menu'
-        );
-        wp_nav_menu($args);
-      ?> <!-- Links -->
-
+        <?php 
+          $args = array(
+            'theme_location' => 'main-menu',
+            'container' => 'nav',
+            'container_class' => 'main-menu'
+          );
+          wp_nav_menu($args);
+        ?> <!-- Links -->
+      </div>
     </div><!-- .nav bar -->
 
     <div class="tagline text-center">
