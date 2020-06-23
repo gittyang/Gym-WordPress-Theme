@@ -239,6 +239,13 @@ body.home .site-header {
     object-fit: cover; }
   .instructors .container .instructor-list li .content {
     padding: 3rem; }
+    .instructors .container .instructor-list li .content .specialty .tag {
+      background-color: var(--primary);
+      padding: .5rem 2rem;
+      border-radius: .5rem;
+      color: white;
+      font-family: var(--mainFont);
+      font-size: 2.2rem; }
 
 @media (min-width: 768px) {
   .instructors .instructor-list {

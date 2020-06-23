@@ -58,6 +58,7 @@
     <div class="container section">
       <h2 class="text-primary text-center">Our Classes</h2>
 
+      <!-- This is an include from queries.php -->
       <?php gymfitness_classes_list(4); ?>
 
       <div class="button-container">
@@ -68,6 +69,8 @@
     </div>
   </section>
 
+
+  <!-- Instructors Section -->
   <section class="instructors">
     <div class="container section">
       <h2 class="text-center text-primary">Our Instructors</h2>
@@ -78,9 +81,19 @@
     </div>
   </section>
 
+
+  <!--  Testimonials Sections -->
+  <section class="testimonials">
+    <h2 class="text-center text-primary">Testimonials</h2>
+    <div class="container">
+      
+    <?php gymfitness_testimonial_list(); ?>
+    
+  </div>
+  </section>
+
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
-
 
 

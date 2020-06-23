@@ -55,7 +55,7 @@ function gymfitness_classes_list($number = -1) { ?>
 // The Back End code where the Post Type "Instructors" Plugin was created
 // Is located at gym_post_types.php in the Plugins folder after the "Classes" section
 
-function gymfitness_instructors_list() { ?>
+function gymfitness_instructors_list() { ?> 
   <ul class="instructor-list">
     <?php 
       // method for querying the data from "Instructors" post type
@@ -76,7 +76,8 @@ function gymfitness_instructors_list() { ?>
             <?php 
               $specialty = get_field('specialty');
 
-              foreach($specialty as $s): ?>
+              foreach($specialty as $s):?> 
+                
               
               <span class="tag"><?php echo $s; ?></span>
 
@@ -86,6 +87,39 @@ function gymfitness_instructors_list() { ?>
       </li>
 
     <?php endwhile; wp_reset_postdata(); ?>
+  </ul>
+
+<?php }
+?>
+
+
+<?php  
+function gymfitness_testimonial_list() { ?>
+  <ul class="testimonials-list">
+  <?php 
+    // method for querying the data from "Testimonials" post type
+    $args = array(
+    // if 'posts_type' = queried from blogs = HEADACHE
+    'post_type' => 'testimonials', // testimonial name located at gym_post_type.php
+    'posts_per_page' => 20
+  );
+
+  $testimonials = new WP_Query($args);
+  while( $testimonials->have_posts() ): $testimonials->the_post(); ?>
+  
+
+  <li class="testimonial text-center">
+    <blockquote>
+      <?php the_content(); ?>
+    </blockquote>
+
+    <footer class="testimonial-footer">
+      <?php the_post_thumbnail('thumbnail'); ?>
+      <p><?php the_title(); ?></p>
+    </footer>
+  </li>
+
+  <?php endwhile; wp_reset_postdata(); ?>
   </ul>
 
 <?php }
