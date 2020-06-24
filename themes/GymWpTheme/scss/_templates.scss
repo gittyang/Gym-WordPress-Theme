@@ -240,7 +240,7 @@
 
     .page-content {
       width: 60%;
-      margin-right: 4rem;
+      margin-right: 6rem;
 
       p.content-class {
         font-weight: 700;
@@ -264,12 +264,6 @@
 
 // About Us Page
 .about {
-
-  p {
-  }
-
-  h1 {
-  }
 
   img {
     display: flex;
@@ -370,11 +364,19 @@
 
 // Sidebar
 .sidebar {
-  a {
-    color: black;
+
+  li {
+    list-style-type: disc;
+
+    a {
+      color: black;
+      font-size: 1.5rem;
+    }
   }
+  
+
   .widget{
-    margin-bottom: 2rem;
+    margin-bottom: 4rem; 
 
     .classes-header {
       margin-bottom: 2rem;
@@ -392,10 +394,13 @@
 
         .class-content {
           flex: 0 0 calc(70% - 2em);
+
+          a {
+            font-weight: normal;
+          }
           
           p {
             font-size: 1.5rem;
-            font-weight: 700;
             margin: 0;
           }
         }
@@ -521,7 +526,7 @@
     border: none;
 
     &:hover {
-      background-color: lighten(#FF5B00, 3%); 
+      background-color: lighten(#b13333, 3%); 
       cursor: pointer;
     }
   }

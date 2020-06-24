@@ -57,6 +57,11 @@ function gymfitness_scripts() {
     wp_enqueue_script('bxsliderjs', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js', array('jquery'), true);
   endif;
 
+    // fixedTop Nav
+    // if( is_front_page() ):
+    //   wp_enqueue_script('fixedtopjs', get_template_directory_uri() . '/js/fixedTop.js' , array('jquery'), '1.0.10', true);
+    // endif;
+
   wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true);
 
 }

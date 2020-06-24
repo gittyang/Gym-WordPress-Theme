@@ -5,6 +5,8 @@
 <?php while( have_posts() ): the_post(); ?>
 
   <!-- Welcome Section -->
+  <!-- <p>Hello from front-page.php</p> -->
+
   <section class="welcome text-center section">
     <h2 class="text-primary"><?php the_field('welcome_heading'); ?></h2>
     <p><?php the_field('welcome_text'); ?></p>
@@ -72,7 +74,7 @@
   <section class="instructors">
     <div class="container section">
       <h2 class="text-center text-primary">Our Instructors</h2>
-      <p class="text-center">Professional instructors that will help you achieve your goals</p>
+      <p class="text-center">Achieve your goals with the help of our expert instructors & personal trainers</p>
 
       <!-- This function is an "include" located at inc/queries.php in displays the instructors -->
       <?php gymfitness_instructors_list() ?>

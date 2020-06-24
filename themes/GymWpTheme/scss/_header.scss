@@ -1,22 +1,23 @@
 // --- Header Styles ---
 
 .site-header {
-  // border: 2px solid cyan;
   background-color: var(--darkGray);
   padding: 2rem 0;
   
   .header-grid {
-    // border: 2px solid brown;
-    margin-top: 2rem;
     
     .navigation-bar {
-      // border: 2px solid greenyellow;
+      background-color: var(--darkGray);
 
       .nav-container {
-        // border: 2px solid blue;
         display: flex;
         justify-content: center;
         
+        @media (max-width: 768px) {
+          .logo {
+            margin-top: 2rem;
+          }
+        }
       }
     }
     
@@ -28,10 +29,6 @@
         justify-content: space-between;
         }
       }
-    }
-
-    body.ft {
-
     }
 
     .fixed-top {
@@ -83,50 +80,85 @@
 
 
 
-// Front Header
+// Homepage Header
 
 body.home {
 
   .site-header {
     height: 90vh;
     min-height: 65rem; // 650px
-    padding-top: 2rem; 
+    padding-top: 0;
 
     .header-grid {
 
+      .navigation-bar {
+        padding: 2rem 0;
+
+        .nav-container {
+          max-width: 120rem;
+        }
+      }
+    }
+      
       .tagline {
         color: white;
         margin-top: 15rem;
 
+        p {
+          margin: 0;
+          font-size: 2rem;
+        }
+
+        button {
+          background-color: var(--primary);
+          border: none;
+          border-radius: .5rem;
+          color: white;
+          font-size: 2rem;
+          font-family: var(--mainFont);
+          margin-top: 2rem;
+          padding: 1rem 2rem;
+
+          &:hover {
+            cursor: pointer;
+            background-color: lighten(#b13333, 3%); 
+          }
+        }
       }
-    }
 
     @media (min-width: 768px) {
       .header-grid {
-        // border: 2px solid red;
 
         .navigation-bar {
-          // border: 2px solid blue;
           display: grid;
-          // grid-template-columns: repeat(4, 1fr);
-          // grid-template-rows: repeat(5, 1fr);
-          // height: 100%;
   
           .nav-container {
-            // border: 2px solid green;
             grid-column: 1 / 5;
           }
         }
   
   
         .tagline {
-          // border: 2px solid orange;
-          // grid-column: 2 / 4;
-          // grid-row: 3 / 4;
-          // margin-top: 0;
   
           p {
+            margin: 0;
             font-size: 2rem;
+          }
+
+          button {
+            background-color: var(--primary);
+            border: none;
+            border-radius: .5rem;
+            color: white;
+            font-size: 2rem;
+            font-family: var(--mainFont);
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+
+            &:hover {
+              cursor: pointer;
+              background-color: lighten(#b13333, 3%); 
+            }
           }
         }
       }
@@ -198,6 +230,17 @@ body.home {
 
 .slicknav_menu {
   background-color: var(--darkGray);
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.show-slick {
+  background-color: var(--darkGray);
+  // transition: ease-out 1s;
 }
 
 .slicknav_btn {

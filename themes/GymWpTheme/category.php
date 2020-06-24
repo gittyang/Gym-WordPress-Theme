@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<p>hello from home.php</p>
+<!-- <p>hello from category.php</p> -->
 
 <main class="container page section">
 

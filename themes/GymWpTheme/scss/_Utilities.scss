@@ -35,5 +35,10 @@
       display: inline-block;
       flex: 0 0 auto;
     }
+
+    &:hover {
+      cursor: pointer;
+      background-color: lighten(#b13333, 3%); 
+    }
   }
 }

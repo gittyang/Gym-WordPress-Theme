@@ -7,8 +7,9 @@
   --secondaryFont: 'Raleway', sans-serif;
 
   /* Colors */
-  --primary: #FF5B00;
-  --darkGray: #2F2E2E;
+  --primary: #b13333;
+  --primar: #FF5B00;
+  --darkGray: #1b1b1b;
   --lightGray: #EBEBEB;
 
   --white: #ffffff;
@@ -32,10 +33,14 @@ body {
 }
 
 /* Headings */
-h1, h2, h3 {
+h1, h2, h3 , h4 , p{
   font-family: var(--mainFont);
   margin: .5rem 0;
   line-height: 1.2;
+}
+
+p {
+  font-family: var(--secondaryFont);
 }
 
 h1 {
@@ -43,11 +48,16 @@ h1 {
 }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: 3.6rem;
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem; 
+  font-weight: normal;
 }
 
 a {

@@ -1,8 +1,5 @@
 <!-- single.php refers to WordPress Posts -->
 
-<p>hello from single-gymfitness_classes.php</p>
-
-
 <?php get_header(); ?>
 
 <Main class="container page section with-sidebar">

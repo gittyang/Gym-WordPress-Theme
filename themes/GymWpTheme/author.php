@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<p>hello from author.php</p>
+<!-- <p>hello from author.php</p> -->
 
 <main class="container page section">
 
